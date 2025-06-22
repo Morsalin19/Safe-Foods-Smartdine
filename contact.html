@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header with Hero Image -->
+    <header>
+        <div class="container">
+            <marquee class="logo" behavior="" direction="">Safe Foods SmartDine</marquee>
+            <p class="tagline2">@Providing Safe Foods is our Goal!</p>
+            <p class="tagline">To Makeing Helthy Genaration!</p>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><button id="menuButton">Menu</button></li>
+            <li><a href="galary.html">Gallery</a></li>
+            <li><button id="contactButton">Contact</button></li>
+            <li><button id="ordertButton">Resurvation</button></li>
+            <li><a href="payment.php">Payment</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <!--menu ber-->
+    <div class="menu_div" id="menu-div">
+        <ul>
+            <li><a href="breakfast.php">Breakfast Menu</a></li>
+            <li><a href="lunch.php">Lunch Menu</a></li>
+            <li><a href="dinner.php">Dinner Menu</a></li>
+            <li><a href="fruits.php">Fruits Menu</a></li>
+            <li><a href="cold_drinks.php">Cold Drinks</a></li>
+            <li><a href="order_now.php">Available Menu</a></li>
+            <li><a href="special.php">Special Menu</a></li>
+        </ul>
+    </div>
+    <!--contact ber-->
+    <div class="contact-div" id="contact-div">
+        <ul>
+            <li><a href="chat.php">Instant Chat</a></li>
+            <li><a href="comment.php">Review Comment</a></li>
+            <li><a href="contact.html">Another Contact</a></li>
+        </ul>
+    </div>
+    <!--resurve ber-->
+    <div class="order-div" id="order-div">
+        <ul>
+            <li><a href="order_now.php">Order Now</a></li>
+            <li><a href="orderForFeuture.php">Feutur's Order</a></li>
+            <li><a href="">Home Delivary</a></li>
+        </ul>
+    </div>
+    <div class="main3">
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Here are all the ways you can reach us:</p>
+
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>Address</h3>
+                    <p>123 Main Street, Suite 456<br>City, State, ZIP Code<br>Country</p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>Social Media</h3>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com/example" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/example" target="_blank">Twitter</a></li>
+                        <li><a href="https://linkedin.com/company/example" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://instagram.com/example" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="/submit-form" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button class="btn5" type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+     <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SDM SmartDine. All rights reserved.</p>
+            <p>Designed with <i class="fas fa-heart" style="color: var(--primary);"></i> for food lovers</p>
+        </div>
+    </footer>
+
+<!--script code part-->
+<!--menu div-->
+<script>
+    var p = document.getElementById("menuButton")
+    var q = document.getElementById("menu-div")
+    p.addEventListener('click', () => {
+          // Toggle visibility of the button list
+          if (q.style.display === 'none' || q.style.display === '') {
+            q.style.display = 'block';
+          } else {
+            q.style.display = 'none';
+          }
+        });
+</script>
+<!--contact div-->
+<script>
+    var x = document.getElementById("contactButton")
+    var y = document.getElementById("contact-div")
+    x.addEventListener('click', () => {
+          // Toggle visibility of the button list
+          if (y.style.display === 'none' || y.style.display === '') {
+            y.style.display = 'block';
+          } else {
+            y.style.display = 'none';
+          }
+        });
+</script>
+<!--Resurvation div-->
+<script>
+    var a = document.getElementById("ordertButton")
+    var b = document.getElementById("order-div")
+    a.addEventListener('click', () => {
+          // Toggle visibility of the button list
+          if (b.style.display === 'none' || b.style.display === '') {
+            b.style.display = 'block';
+          } else {
+            b.style.display = 'none';
+          }
+        });
+</script>
+</body>
+</html>
